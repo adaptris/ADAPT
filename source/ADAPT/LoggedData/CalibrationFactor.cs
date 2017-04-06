@@ -33,6 +33,6 @@ namespace AgGateway.ADAPT.ApplicationDataModel.LoggedData
         
         public NumericRepresentationValue Value  { get; set; }
 
-        public int? OperationDataId { get; set; }
+        public int OperationDataId { get; set; }
     }
 }

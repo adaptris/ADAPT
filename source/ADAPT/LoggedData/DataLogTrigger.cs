@@ -47,6 +47,6 @@ namespace AgGateway.ADAPT.ApplicationDataModel.LoggedData
 
         public Representation Representation { get; set; }
 
-        public int? DeviceElementId { get; set; } 
+        public int DeviceElementId { get; set; } 
     }
 }

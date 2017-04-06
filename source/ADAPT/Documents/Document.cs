@@ -49,7 +49,7 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Documents
 
         public List<int> FieldIds { get; set; }
 
-        public int? GrowerId { get; set; }
+        public int GrowerId { get; set; }
 
         public List<Note> Notes { get; set; }
 
@@ -57,6 +57,6 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Documents
 
         public List<TimeScope> TimeScopes { get; set; }
 
-        public int? Version { get; set; }
+        public int Version { get; set; }
     }
 }

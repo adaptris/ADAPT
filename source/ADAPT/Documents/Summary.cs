@@ -48,13 +48,13 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Documents
 
         public int WorkRecordId { get; set; }
 
-        public int? GrowerId { get; set; }
+        public int GrowerId { get; set; }
 
-        public int? FarmId { get; set; }
+        public int FarmId { get; set; }
 
-        public int? FieldId { get; set; }
+        public int FieldId { get; set; }
 
-        public int? CropZoneId { get; set; }
+        public int CropZoneId { get; set; }
 
         public List<TimeScope> TimeScopes { get; set; }
 

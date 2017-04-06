@@ -33,7 +33,7 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Prescriptions
 
         public int FieldId { get; set; }
 
-        public int? CropZoneId { get; set; }
+        public int CropZoneId { get; set; }
 
         public List<RxProductLookup> RxProductLookups { get; set; }
 

@@ -31,11 +31,11 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Logistics
 
         public string Description { get; set; }
 
-        public int? FarmId { get; set; }
+        public int FarmId { get; set; }
 
         public NumericRepresentationValue Area { get; set; }
 
-        public int? ActiveBoundaryId { get; set; }
+        public int ActiveBoundaryId { get; set; }
 
         public List<ContextItem> ContextItems { get; set; }
 

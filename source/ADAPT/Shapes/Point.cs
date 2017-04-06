@@ -25,6 +25,6 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Shapes
 
         public double Y { get; set; }
 
-        public double? Z { get; set; }
+        public double Z { get; set; }
     }
 }

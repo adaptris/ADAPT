@@ -59,7 +59,7 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Common
         /// ParentId property. </summary>
         /// <value>
         /// Populated if this ContextItemDefiniton is a "child" of a Nested ContextItemDefinition. This value is optional.</value>
-        public int? ParentId { get; set; }
+        public int ParentId { get; set; }
 
         /// <summary>
         /// Code property. </summary>

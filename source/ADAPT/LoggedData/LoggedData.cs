@@ -45,13 +45,13 @@ namespace AgGateway.ADAPT.ApplicationDataModel.LoggedData
 
         public int WorkRecordId { get; set; }
 
-        public int? GrowerId { get; set; }
+        public int GrowerId { get; set; }
 
-        public int? FarmId { get; set; }
+        public int FarmId { get; set; }
 
-        public int? FieldId { get; set; }
+        public int FieldId { get; set; }
 
-        public int? CropZoneId { get; set; }
+        public int CropZoneId { get; set; }
 
         public List<TimeScope> TimeScopes { get; set; }
 
@@ -63,7 +63,7 @@ namespace AgGateway.ADAPT.ApplicationDataModel.LoggedData
 
         public List<int> WorkItemIds { get; set; }
 
-        public int? SummaryId { get; set; }
+        public int SummaryId { get; set; }
 
         public List<Note> Notes { get; set; }
 

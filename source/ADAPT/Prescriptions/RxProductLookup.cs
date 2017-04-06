@@ -24,7 +24,7 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Prescriptions
 
         public CompoundIdentifier Id { get; private set; }
 
-        public int? ProductId { get; set; }
+        public int ProductId { get; set; }
         
         public NumericRepresentation Representation { get; set; }
         

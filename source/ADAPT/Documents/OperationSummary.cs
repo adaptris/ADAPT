@@ -32,7 +32,7 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Documents
 
         public int ProductId { get; set; }
 
-        public int? WorkItemOperationId { get; set; }
+        public int WorkItemOperationId { get; set; }
         
         public List<StampedMeteredValues> Data { get; set; }
 

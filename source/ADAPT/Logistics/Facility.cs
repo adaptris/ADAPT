@@ -27,7 +27,7 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Logistics
 
         public CompoundIdentifier Id { get; private set; }
 
-        public int? CompanyId { get; set; }
+        public int CompanyId { get; set; }
 
         public string Description { get; set; }
 

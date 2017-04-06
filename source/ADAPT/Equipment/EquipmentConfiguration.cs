@@ -36,7 +36,7 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Equipment
 
         public int Connector1Id { get; set; }
 
-        public int? Connector2Id { get; set; }
+        public int Connector2Id { get; set; }
 
         public List<DataLogTrigger> DataLogTriggers { get; set; } 
 

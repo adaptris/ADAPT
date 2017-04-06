@@ -28,7 +28,7 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Products
 
         public string Name { get; set; }
 
-        public int? ParentId { get; set; }
+        public int ParentId { get; set; }
 
         public NumericRepresentationValue ReferenceWeight { get; set; }
 

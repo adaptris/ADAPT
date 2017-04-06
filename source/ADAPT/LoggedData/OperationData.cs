@@ -30,17 +30,17 @@ namespace AgGateway.ADAPT.ApplicationDataModel.LoggedData
 
         public CompoundIdentifier Id { get; private set; }
         
-        public int? LoadId { get; set; }
+        public int LoadId { get; set; }
 
         public OperationTypeEnum OperationType { get; set; }
 
-        public int? PrescriptionId { get; set; }
+        public int PrescriptionId { get; set; }
 
-        public int? ProductId { get; set; }
+        public int ProductId { get; set; }
 
-        public int? VarietyLocatorId { get; set; }
+        public int VarietyLocatorId { get; set; }
 
-        public int? WorkItemOperationId { get; set; }
+        public int WorkItemOperationId { get; set; }
 
         public int MaxDepth { get; set; }
 

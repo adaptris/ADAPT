@@ -47,17 +47,17 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Documents
 
         public List<int> PeopleRoleIds { get; set; }
 
-        public int? GrowerId { get; set; }
+        public int GrowerId { get; set; }
         
-        public int? FarmId { get; set; }
+        public int FarmId { get; set; }
 
-        public int? FieldId { get; set; }
+        public int FieldId { get; set; }
 
-        public int? CropZoneId { get; set; }
+        public int CropZoneId { get; set; }
         
         public List<int> ReferenceLayerIds { get; set; }
 
-        public int? BoundaryId { get; set; }
+        public int BoundaryId { get; set; }
 
         public List<int> WorkItemOperationIds { get; set; }
 

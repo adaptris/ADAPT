@@ -30,14 +30,14 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Common
 
         public DateContextEnum DateContext { get; set; }
 
-        public DateTime? TimeStamp1 { get; set; }
+        public DateTime TimeStamp1 { get; set; }
 
-        public DateTime? TimeStamp2 { get; set; }
+        public DateTime TimeStamp2 { get; set; }
 
         public Location Location1 { get; set; }
 
         public Location Location2 { get; set; }
 
-        public TimeSpan? Duration { get; set; }
+        public TimeSpan Duration { get; set; }
     }
 }

@@ -32,10 +32,10 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Logistics
 
         public EnumeratedValue Role { get; set; }
         
-        public int? GrowerId { get; set; }
+        public int GrowerId { get; set; }
 
         public List<TimeScope> TimeScopes { get; set; }
 
-        public int? CompanyId { get; set; }
+        public int CompanyId { get; set; }
     }
 }

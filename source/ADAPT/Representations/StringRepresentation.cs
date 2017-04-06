@@ -15,8 +15,8 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Representations
 {
     public class StringRepresentation : Representation
     {
-        public int? MinCharacters { get; set; }
+        public int MinCharacters { get; set; }
 
-        public int? MaxCharacters { get; set; }
+        public int MaxCharacters { get; set; }
     }
 }

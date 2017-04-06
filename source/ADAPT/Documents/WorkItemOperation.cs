@@ -32,7 +32,7 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Documents
         
         public OperationTypeEnum OperationType { get; set; }
         
-        public int? PrescriptionId { get; set; }
+        public int PrescriptionId { get; set; }
 
         public List<int> EquipmentConfigurationIds { get; set; } 
     }

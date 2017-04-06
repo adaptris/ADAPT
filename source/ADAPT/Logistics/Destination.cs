@@ -29,6 +29,6 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Logistics
         
         public Location Location { get; set; }
 
-        public int? FacilityId { get; set; }
+        public int FacilityId { get; set; }
     }
 }

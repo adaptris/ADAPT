@@ -24,11 +24,11 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Guidance
 
         public int NumberOfSegments { get; set; }
 
-        public double? Heading { get; set; }
+        public double Heading { get; set; }
 
-        public double? EastShiftComponent { get; set; }
+        public double EastShiftComponent { get; set; }
 
-        public double? NorthShiftComponent { get; set; }
+        public double NorthShiftComponent { get; set; }
 
         public List<LineString> Shape { get; set; }
     }

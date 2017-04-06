@@ -31,7 +31,7 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Products
 
         public string Description { get; set; }
 
-        public int? ManufacturerId { get; set; }
+        public int ManufacturerId { get; set; }
 
         public List<int> CropIds { get; set; }
     }

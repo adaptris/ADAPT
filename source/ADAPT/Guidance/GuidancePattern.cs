@@ -42,9 +42,9 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Guidance
 
         public GuidanceExtensionEnum Extension { get; set; }
 
-        public int? NumbersOfSwathsLeft { get; set; }
+        public int NumbersOfSwathsLeft { get; set; }
 
-        public int? NumbersOfSwathsRight { get; set; }
+        public int NumbersOfSwathsRight { get; set; }
 
         public MultiPolygon BoundingPolygon { get; set; }
     }

@@ -31,7 +31,7 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Prescriptions
 
         public NumericRepresentationValue TankAmount { get; set; }
 
-        public double? TotalTanks { get; set; }
+        public double TotalTanks { get; set; }
 
         public ApplicationStrategyEnum ApplicationStrategy { get; set; }
     }

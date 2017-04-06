@@ -28,7 +28,7 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Logistics
 
         public string Description { get; set; }
 
-        public int? GrowerId { get; set; }
+        public int GrowerId { get; set; }
 
         public ContactInfo ContactInfo { get; set; }
 
