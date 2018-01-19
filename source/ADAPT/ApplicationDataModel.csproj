@@ -66,6 +66,7 @@
     <Compile Include="Equipment\SectionConfiguration.cs" />
     <Compile Include="Guidance\AbCurve.cs" />
     <Compile Include="Guidance\AbLine.cs" />
+    <Compile Include="Guidance\CenterPivot.cs" />
     <Compile Include="Guidance\MultiAbLine.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -76,6 +77,9 @@
     <Compile Include="ADM\ApplicationDataModel.cs" />
     <Compile Include="Prescriptions\ApplicationStrategyEnum.cs" />
     <Compile Include="Products\AvailableProduct.cs" />
+    <Compile Include="Products\CropVariety.cs" />
+    <Compile Include="Products\FertilizerProduct.cs" />
+    <Compile Include="Products\ProductMix.cs" />
     <Compile Include="Products\GenericProduct.cs" />
     <Compile Include="Products\HarvestedCommodityProduct.cs" />
     <Compile Include="Shapes\BoundingBox.cs" />
