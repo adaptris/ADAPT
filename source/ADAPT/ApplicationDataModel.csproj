@@ -70,6 +70,7 @@
     <Compile Include="Guidance\MultiAbLine.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="LoggedData\MachineTypeEnum.cs" />
     <Compile Include="Logistics\CropZone.cs" />
     <Compile Include="Prescriptions\RxProductLookup.cs" />
     <Compile Include="Products\ActiveIngredient.cs" />
@@ -77,8 +78,10 @@
     <Compile Include="ADM\ApplicationDataModel.cs" />
     <Compile Include="Prescriptions\ApplicationStrategyEnum.cs" />
     <Compile Include="Products\AvailableProduct.cs" />
+    <Compile Include="Products\CropNutritionIngredientCodeEnum.cs" />
     <Compile Include="Products\CropVariety.cs" />
     <Compile Include="Products\FertilizerProduct.cs" />
+    <Compile Include="Products\ModeOfAction.cs" />
     <Compile Include="Products\ProductMix.cs" />
     <Compile Include="Products\GenericProduct.cs" />
     <Compile Include="Products\HarvestedCommodityProduct.cs" />

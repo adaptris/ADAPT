@@ -4,7 +4,7 @@
   * All rights reserved. This program and the accompanying materials
   * are made available under the terms of the Eclipse Public License v1.0
   * which accompanies this distribution, and is available at
-  * http://www.eclipse.org/legal/epl-v10.html <http://www.eclipse.org/legal/epl-v10.html> 
+  * http://www.eclipse.org/legal/epl-v10.html <http://www.eclipse.org/legal/epl-v10.html>
   *
   * Contributors:
   *    Tarak Reddy, Tim Shearouse - initial API and implementation
@@ -19,6 +19,7 @@
 using System.Collections.Generic;
 using AgGateway.ADAPT.ApplicationDataModel.Common;
 using AgGateway.ADAPT.ApplicationDataModel.Representations;
+using System;
 
 namespace AgGateway.ADAPT.ApplicationDataModel.Products
 {
@@ -35,8 +36,14 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Products
 
         public int? BrandId { get; set; }
 
+		[Obsolete("JD module is just being rubbish")]
+		public void set_BrandId(int id)
+		{
+			BrandId = id;
+		}
+
         public CategoryEnum Category { get; set; }
-        
+
         public List<ContextItem> ContextItems { get; set; }
 
         public NumericRepresentationValue Density { get; set; }
@@ -54,6 +61,12 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Products
         public bool HasHarvestCommodity { get; set; }
 
         public int? ManufacturerId { get; set; }
+
+		[Obsolete("JD module is just being rubbish")]
+		public void set_ManufacturerId(int id)
+		{
+			ManufacturerId = id;
+		}
 
         public List<ProductComponent> ProductComponents { get; set; }
 
