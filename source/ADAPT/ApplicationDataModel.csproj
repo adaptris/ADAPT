@@ -55,6 +55,7 @@
     <Compile Include="Documents\OperationSummary.cs" />
     <Compile Include="Documents\StampedMeteredValues.cs" />
     <Compile Include="Documents\Summary.cs" />
+    <Compile Include="Equipment\MachineTypeEnum.cs" />
     <Compile Include="Equipment\DeviceElement.cs" />
     <Compile Include="Equipment\DeviceElementConfiguration.cs" />
     <Compile Include="Equipment\DeviceElementTypeEnum.cs" />
@@ -70,7 +71,6 @@
     <Compile Include="Guidance\MultiAbLine.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="LoggedData\MachineTypeEnum.cs" />
     <Compile Include="Logistics\CropZone.cs" />
     <Compile Include="Prescriptions\RxProductLookup.cs" />
     <Compile Include="Products\ActiveIngredient.cs" />
