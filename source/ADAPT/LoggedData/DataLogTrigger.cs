@@ -15,6 +15,7 @@
 using System.Collections.Generic;
 using AgGateway.ADAPT.ApplicationDataModel.Common;
 using AgGateway.ADAPT.ApplicationDataModel.Representations;
+using System;
 
 namespace AgGateway.ADAPT.ApplicationDataModel.LoggedData
 {
@@ -25,6 +26,8 @@ namespace AgGateway.ADAPT.ApplicationDataModel.LoggedData
             Id = CompoundIdentifierFactory.Instance.Create();
 
             ContextItems = new List<ContextItem>();
+			SectionIds = new List<int>();
+			MeterIds = new List<int>();
         }
 
         public CompoundIdentifier Id { get; private set; }
@@ -47,6 +50,12 @@ namespace AgGateway.ADAPT.ApplicationDataModel.LoggedData
 
         public Representation Representation { get; set; }
 
-        public int? DeviceElementId { get; set; } 
-    }
+        public int? DeviceElementId { get; set; }
+
+		[Obsolete("Do not use; no longer exists")]
+		public List<int> SectionIds { get; set; }
+
+		[Obsolete("Do not use; no longer exists")]
+		public List<int> MeterIds { get; set; }
+	}
 }

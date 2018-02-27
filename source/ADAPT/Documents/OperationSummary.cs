@@ -14,6 +14,7 @@
 using System.Collections.Generic;
 using AgGateway.ADAPT.ApplicationDataModel.Common;
 using AgGateway.ADAPT.ApplicationDataModel.Shapes;
+using System;
 
 namespace AgGateway.ADAPT.ApplicationDataModel.Documents
 {
@@ -41,5 +42,17 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Documents
         public MultiPolygon CoverageShape { get; set; }
 
         public List<ContextItem> ContextItems { get; set; }
-    }
+
+		[Obsolete("Use EquipmentConfigurationIds from now on")]
+		public int get_EquipmentConfigId()
+		{
+			return EquipmentConfigurationIds[0];
+		}
+
+		[Obsolete("Use EquipmentConfigurationIds from now on")]
+		public void set_EquipmentConfigId(int id)
+		{
+			EquipmentConfigurationIds.Add(id);
+		}
+	}
 }

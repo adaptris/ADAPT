@@ -4,7 +4,7 @@
  * All rights reserved. This program and the accompanying materials
  * are made available under the terms of the Eclipse Public License v1.0
  * which accompanies this distribution, and is available at
- * http://www.eclipse.org/legal/epl-v10.html <http://www.eclipse.org/legal/epl-v10.html> 
+ * http://www.eclipse.org/legal/epl-v10.html <http://www.eclipse.org/legal/epl-v10.html>
  *
  * Contributors:
  *    Kathleen Oneal - initial API and implementation
@@ -26,6 +26,7 @@ using System.Collections.Generic;
 using AgGateway.ADAPT.ApplicationDataModel.Equipment;
 using AgGateway.ADAPT.ApplicationDataModel.Notes;
 using AgGateway.ADAPT.ApplicationDataModel.Common;
+using System;
 
 namespace AgGateway.ADAPT.ApplicationDataModel.Documents
 {
@@ -36,15 +37,17 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Documents
             Id = CompoundIdentifierFactory.Instance.Create();
             TimeScopes = new List<TimeScope>();
             PersonRoleIds = new List<int>();
-            GuidanceAllocationIds = new List<int>();
-            WorkItemIds = new List<int>();
-            LoggedDataIds = new List<int>();
             Notes = new List<Note>();
             SummaryData = new List<StampedMeteredValues>();
+            LoggedDataIds = new List<int>();
+            WorkItemIds = new List<int>();
             OperationSummaries = new List<OperationSummary>();
+            GuidanceAllocationIds = new List<int>();
         }
 
         public CompoundIdentifier Id { get; private set; }
+
+        public List<StampedMeteredValues> SummaryData { get; set; }
 
         public int WorkRecordId { get; set; }
 
@@ -60,19 +63,28 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Documents
 
         public List<int> PersonRoleIds { get; set; }
 
-        public EquipmentConfigurationGroup EquipmentConfigurationGroup { get; set; }
-
-        public List<int> GuidanceAllocationIds { get; set; }
-
-        public List<int> WorkItemIds { get; set; }
+        public List<Note> Notes { get; set; }
 
         public List<int> LoggedDataIds { get; set; }
 
-        public List<Note> Notes { get; set; }
-
-        public List<StampedMeteredValues> SummaryData { get; set; }
+        public List<int> WorkItemIds { get; set; }
 
         public List<OperationSummary> OperationSummaries { get; set; }
 
-    }
+        public List<int> GuidanceAllocationIds { get; set; }
+
+        public EquipmentConfigurationGroup EquipmentConfigurationGroup { get; set; }
+
+		[Obsolete("Use GuidanceAllocationIds from now on")]
+		public List<int> get_ContainerUseIds()
+		{
+			return GuidanceAllocationIds;
+		}
+
+		[Obsolete("Use GuidanceAllocationIds from now on")]
+		public void set_ContainerUseIds(List<int> ids)
+		{
+			GuidanceAllocationIds = ids;
+		}
+	}
 }

@@ -4,7 +4,7 @@
   * All rights reserved. This program and the accompanying materials
   * are made available under the terms of the Eclipse Public License v1.0
   * which accompanies this distribution, and is available at
-  * http://www.eclipse.org/legal/epl-v10.html <http://www.eclipse.org/legal/epl-v10.html> 
+  * http://www.eclipse.org/legal/epl-v10.html <http://www.eclipse.org/legal/epl-v10.html>
   *
   * Contributors:
   *    Tarak Reddy, Tim Shearouse - initial API and implementation
@@ -34,43 +34,46 @@ namespace AgGateway.ADAPT.ApplicationDataModel.LoggedData
         public LoggedData()
         {
             Id = CompoundIdentifierFactory.Instance.Create();
-            TimeScopes = new List<TimeScope>();
             PersonRoleIds = new List<int>();
-            GuidanceAllocationIds = new List<int>();
             WorkItemIds = new List<int>();
             Notes = new List<Note>();
+            GuidanceAllocationIds = new List<int>();
+            TimeScopes = new List<TimeScope>();
         }
 
         public CompoundIdentifier Id { get; private set; }
 
-        public int WorkRecordId { get; set; }
+        public List<int> WorkItemIds { get; set; }
 
-        public int? GrowerId { get; set; }
+        public List<Note> Notes { get; set; }
+
+        public List<int> GuidanceAllocationIds { get; set; }
 
         public int? FarmId { get; set; }
 
         public int? FieldId { get; set; }
 
-        public int? CropZoneId { get; set; }
+        public int? GrowerId { get; set; }
 
-        public List<TimeScope> TimeScopes { get; set; }
+        public int? CropZoneId { get; set; }
 
         public List<int> PersonRoleIds { get; set; }
 
-        public EquipmentConfigurationGroup EquipmentConfigurationGroup { get; set; }
-
-        public List<int> GuidanceAllocationIds { get; set; }
-
-        public List<int> WorkItemIds { get; set; }
+        public IEnumerable<OperationData> OperationData { get; set; }
 
         public int? SummaryId { get; set; }
 
-        public List<Note> Notes { get; set; }
-
-        public IEnumerable<OperationData> OperationData { get; set; }
-
         public Action ReleaseSpatialData { get; set; }
 
+        public EquipmentConfigurationGroup EquipmentConfigurationGroup { get; set; }
+
+        public List<TimeScope> TimeScopes { get; set; }
+
         public string Description { get; set; }
+
+        public int WorkRecordId { get; set; }
+
+		[Obsolete("Do not use; no longer exists")]
+		public List<int> ContainerUseIDs { get; set; }
     }
 }

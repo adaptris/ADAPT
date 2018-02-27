@@ -17,6 +17,7 @@
 
 using AgGateway.ADAPT.ApplicationDataModel.Common;
 using AgGateway.ADAPT.ApplicationDataModel.Representations;
+using System;
 
 namespace AgGateway.ADAPT.ApplicationDataModel.LoggedData
 {
@@ -37,5 +38,7 @@ namespace AgGateway.ADAPT.ApplicationDataModel.LoggedData
 
         public NumericRepresentationValue ReportedLatency { get; set; }
 
+		[Obsolete("Do not use; no longer exists")]
+		public int? TriggerId { get; set; }
     }
 }

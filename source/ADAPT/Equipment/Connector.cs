@@ -33,13 +33,13 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Equipment
 
         public int HitchPointId { get; set; }
 
-		[Obsolete("Use CompoundIdentifier from now on")]
+		[Obsolete("Use DeviceElementConfigurationId from now on")]
 		public void set_DeviceConfigurationId(int id)
 		{
 			DeviceElementConfigurationId = id;
 		}
 
-		[Obsolete("Use CompoundIdentifier from now on")]
+		[Obsolete("Use DeviceElementConfigurationId from now on")]
 		public int get_DeviceConfigurationId()
 		{
 			return DeviceElementConfigurationId;

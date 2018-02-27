@@ -12,6 +12,7 @@
   *    Stuart Rhea - #111 Remove ModeOfAction collection from ActiveIngredient
   *******************************************************************************/
 
+using System;
 using System.Collections.Generic;
 
 namespace AgGateway.ADAPT.ApplicationDataModel.Products
@@ -20,6 +21,10 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Products
     {
         public ActiveIngredient()
         {
+			ModesOfAction = new List<ModeOfAction>();
         }
+
+		[Obsolete("Do not use; no longer exists")]
+		public List<ModeOfAction> ModesOfAction { get; set; }
     }
 }
