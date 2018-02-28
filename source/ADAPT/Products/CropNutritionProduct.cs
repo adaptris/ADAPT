@@ -15,8 +15,7 @@
 
 namespace AgGateway.ADAPT.ApplicationDataModel.Products
 {
-    public class CropNutritionProduct : Product
+    public class CropNutritionProduct : FertilizerProduct
     {
-        public bool IsManure { get; set; }
     }
 }

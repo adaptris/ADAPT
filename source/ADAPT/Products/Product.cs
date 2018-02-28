@@ -34,13 +34,8 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Products
 
         public CompoundIdentifier Id { get; private set; }
 
-        public int? BrandId { get; set; }
-
-		[Obsolete("JD module is just being rubbish")]
-		public void set_BrandId(int id)
-		{
-			BrandId = id;
-		}
+		// FIXME should be int? but JD plugins can't handle it
+        public int BrandId { get; set; }
 
         public CategoryEnum Category { get; set; }
 
@@ -60,13 +55,8 @@ namespace AgGateway.ADAPT.ApplicationDataModel.Products
 
         public bool HasHarvestCommodity { get; set; }
 
-        public int? ManufacturerId { get; set; }
-
-		[Obsolete("JD module is just being rubbish")]
-		public void set_ManufacturerId(int id)
-		{
-			ManufacturerId = id;
-		}
+		// FIXME should be int? but JD plugins can't handle it
+        public int ManufacturerId { get; set; }
 
         public List<ProductComponent> ProductComponents { get; set; }
 

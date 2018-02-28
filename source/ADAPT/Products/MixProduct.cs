@@ -12,16 +12,9 @@
   *    Stuart Rhea - Renamed from ProductMix to MixProduct per model
   *******************************************************************************/
 
-using AgGateway.ADAPT.ApplicationDataModel.Representations;
-
 namespace AgGateway.ADAPT.ApplicationDataModel.Products
 {
-    public class MixProduct : Product
+    public class MixProduct : ProductMix
     {
-        public NumericRepresentationValue TotalQuantity { get; set; }
-
-        public bool IsTemporary { get; set; }
-
-        public bool IsHotMix { get; set; }
     }
 }

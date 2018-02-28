@@ -13,21 +13,10 @@
   *    Stuart Rhea - Renamed from CropVariety to CropVarietyProduct per model
   *******************************************************************************/
 
-using System.Collections.Generic;
-
 namespace AgGateway.ADAPT.ApplicationDataModel.Products
 {
-    public class CropVarietyProduct : Product
+    public class CropVarietyProduct : CropVariety
     {
-        public CropVarietyProduct()
-        {
-            TraitIds = new List<int>();
-        }
 
-        public int CropId { get; set; }
-
-        public List<int> TraitIds { get; set; }
-
-        public bool GeneticallyEnhanced { get; set; }
     }
 }

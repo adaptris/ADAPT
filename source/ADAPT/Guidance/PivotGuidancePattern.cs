@@ -11,16 +11,9 @@
   *    Stuart Rhea - #116 Rename CenterPivot to PivotGuidancePattern
   *******************************************************************************/
 
-using AgGateway.ADAPT.ApplicationDataModel.Shapes;
-
 namespace AgGateway.ADAPT.ApplicationDataModel.Guidance
 {
-    public class PivotGuidancePattern : GuidancePattern
+    public class PivotGuidancePattern : CenterPivot
     {
-        public Point StartPoint { get; set; }
-
-        public Point EndPoint { get; set; }
-
-        public Point Center { get; set; }
     }
 }
